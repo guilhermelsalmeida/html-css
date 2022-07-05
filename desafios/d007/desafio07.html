@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-image: linear-gradient(to right, #3d3d3d, #272727);
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 2em;
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+
+    <p>Você está vendo a imagem abaixo? Experimente ampliar ou reduzir o tamanho de sua janela para aproveitar a melhor experiência &#x00A0;&#x1F600;</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="https://raw.githubusercontent.com/gustavoguanabara/html-css/master/desafios/modulo-01/d007/imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="https://raw.githubusercontent.com/gustavoguanabara/html-css/master/desafios/modulo-01/d007/imagens/paisagem-m.png" type="image/png">
+        <img src="https://raw.githubusercontent.com/gustavoguanabara/html-css/master/desafios/modulo-01/d007/imagens/paisagem-g.png" alt="imagem flexível">
+    </picture>
+</body>
+</html>

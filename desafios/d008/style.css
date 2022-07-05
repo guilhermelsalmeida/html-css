@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+:root {
+    --pinicial: #3a3a3a;
+    --tpinicial: #b9b9b9;
+    --pverde: #004105;
+    --tpverde: #84f375;
+    --pamarela: #817f00;
+    --tpamarela: #fffc56;
+}
+
+body {
+    background-color: var(--pinicial);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+body.pverde {
+    background-color: var(--pverde);
+}
+
+body.pamarela {
+    background-color: var(--pamarela);
+}
+
+h1 {
+    color: var(--tpinicial);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+h1.pverde {
+    color: var(--tpverde);
+}
+
+h1.pamarela {
+    color: var(--tpamarela);
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
