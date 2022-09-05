@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamanho de Imagem de Fundo</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover; /* px, 100%, contain, cover, */
+            background-attachment: fixed; /* scroll; fixed */
+            
+            /* background: black url('imagens/wallpaper002.jpg') center top no-repeat cover fixed; */
         }
 
         main {
             background-color: white;
-            width: 700px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 2px solid blue;
