@@ -21,6 +21,7 @@
         table {
             margin: auto;
             width: 400px;
+            height: 400px;
             border-collapse: collapse; /* separate (padrão) */
             border: 5px solid darkblue;
         }
@@ -36,10 +37,16 @@
         td {
             border: 2px solid white;
             padding: 8px;
+            text-align: center; /* alinhamento horizontal: right; left */
+            vertical-align: middle; /* alinhamento vertical: top; bottom; middle (padrão) */
         }
 
         td.dado {
             background-color: darkred;
+        }
+
+        td.numero {
+            text-align: right;
         }
     </style>
 </head>
@@ -55,12 +62,12 @@
         <tr class="linha"> <!-- Segunda linha -->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr> <!-- Terceira linha -->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr class="linha"> <!-- Quarta linha -->
             <td>A4</td>
