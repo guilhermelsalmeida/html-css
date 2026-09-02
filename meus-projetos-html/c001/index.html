@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicadores Gui Corporate - Relatório</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+            margin: 0;
+        }
+        
+        h2 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #1e1e1e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th {
+            background-color: #1f7a8c;
+            color: #ffffff;
+            padding: 16px 14px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        td {
+            padding: 14px 14px;
+            border-bottom: 1px solid #333333;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:hover {
+            background-color: #2a2a2a;
+        }
+        
+        .col-indicador {
+            width: 45%;
+            font-weight: 500;
+        }
+        
+        .positivo {
+            color: #4ade80;
+            font-weight: 600;
+        }
+        
+        .neutro {
+            color: #a3a3a3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Principais Indicadores - Gui Corporate</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Indicador</th>
+                <th>Valor Atual</th>
+                <th>Crescimento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="col-indicador">Receita</td>
+                <td>R$ 150 milhões</td>
+                <td class="positivo">+15%</td>
+            </tr>
+            <tr>
+                <td class="col-indicador">Lucro Líquido</td>
+                <td>R$ 18 milhões</td>
+                <td class="neutro">—</td>
+            </tr>
+            <tr>
+                <td class="col-indicador">Margem de Lucro</td>
+                <td>12%</td>
+                <td class="neutro">—</td>
+            </tr>
+            <tr>
+                <td class="col-indicador">Base de Clientes</td>
+                <td>150.000 clientes</td>
+                <td class="positivo">+20%</td>
+            </tr>
+            <tr>
+                <td class="col-indicador">Despesas Operacionais</td>
+                <td>R$ 30 milhões</td>
+                <td class="positivo">+10%</td>
+            </tr>
+            <tr>
+                <td class="col-indicador">Número de Funcionários</td>
+                <td>1.500 funcionários</td>
+                <td class="positivo">+25%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
