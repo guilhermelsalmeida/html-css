@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 @font-face {
     font-family: 'Android';
     src: url('../fontes/idroid.otf') format('opentype');
@@ -26,6 +24,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
