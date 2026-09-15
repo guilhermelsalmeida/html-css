@@ -19,8 +19,8 @@
 
     /* Fontes */
     --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', 'cursive';
-    --fonte-android: 'Android', 'cursiva';
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
 }
 
 * {
