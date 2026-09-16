@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+:root {
+    /* Paleta de cores */
+    --cor-fundo: #0f1123;
+    --cor-fundo-alt: #171933;
+    --cor-destaque: #f2b134;
+    --cor-texto: #f5f5f7;
+    --cor-texto-suave: #b8b9d1;
+
+    /* Fontes */
+    --fonte-titulo: 'Poppins', Arial, sans-serif;
+    --fonte-corpo: 'Inter', Arial, sans-serif;
+    --fonte-codigo: 'Fira Code', 'Courier New', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-corpo);
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+}
+
+.foto-perfil {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--cor-destaque);
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    color: var(--cor-destaque);
+}
+
+header .tagline {
+    font-family: var(--fonte-corpo);
+    color: var(--cor-texto-suave);
+    font-size: 1.1em;
+    margin-top: 8px;
+}
+
+/* ===== NAV ===== */
+
+nav {
+    background-color: var(--cor-fundo-alt);
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 10px #00000055;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 20px;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-destaque);
+    background-color: #00000033;
+}
+
+/* ===== MAIN / SECTIONS ===== */
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0px;
+    border-bottom: 1px solid #ffffff1a;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+main h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+main p {
+    color: var(--cor-texto);
+    font-size: 1.05em;
+    text-align: justify;
+}
+
+/* ===== HABILIDADES ===== */
+
+.lista-habilidades {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.lista-habilidades li {
+    font-family: var(--fonte-codigo);
+    background-color: var(--cor-fundo-alt);
+    color: var(--cor-destaque);
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-destaque);
+    font-size: 0.95em;
+}
+
+/* ===== CONTATOS ===== */
+
+.lista-contatos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lista-contatos li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-rede {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.lista-contatos a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+
+.lista-contatos a:hover {
+    color: var(--cor-destaque);
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--cor-texto-suave);
+    font-size: 0.85em;
+    background-color: var(--cor-fundo-alt);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.9em;
+    }
+
+    header .tagline {
+        font-size: 1em;
+    }
+
+    nav > ul {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 12px 14px;
+        font-size: 0.9em;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    main p {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .foto-perfil {
+        width: 110px;
+        height: 110px;
+    }
+}
