@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
 :root {
     /* CORES */
     --cor01: #f1c98a; /* #f7e5cd */
@@ -19,6 +15,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 1em;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -38,7 +35,7 @@ header > h1 {
     font-variant: small-caps; /* text-transform: uppercase; */
     font-family: var(--fonte02);
     color: var(--cor01);
-    font-size: 10vw;
+    font-size: clamp(4rem, 12vw, 7rem);
 }
 
 header > p {
@@ -67,8 +64,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    padding-right: 30px;
     font-family: var(--fonte03);
-    font-size: 3.5vw;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
 }
 
 section > p {
