@@ -20,7 +20,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: #a9a9a9;
+    background-color: var(--cor01);
     font-family: var(--fonte01);
 }
 
