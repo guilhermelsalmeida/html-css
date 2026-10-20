@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/* ==========================================================
+   ESTILO.CSS - Gui Corporate
+   Um único arquivo para as duas páginas.
+   Cada página tem uma classe no <body>:
+   - .pagina-tabela    -> tabela.html
+   - .pagina-relatorio -> relatorio.html
+   ========================================================== */
+
+
+/* ---------- 1. ESTILOS COMPARTILHADOS ---------- */
+
+body {
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.link-botao {
+    display: inline-block;
+    background-color: #1f7a8c;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.link-botao:hover {
+    background-color: #176373;
+    transform: translateY(-2px);
+}
+
+.link-botao:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
+.link-botao:active {
+    transform: translateY(0);
+}
+
+
+/* ---------- 2. PÁGINA DA TABELA (tabela.html) ---------- */
+
+.pagina-tabela {
+    background-color: #121212;
+    padding: 40px;
+}
+
+.pagina-tabela h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.pagina-tabela table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pagina-tabela th {
+    background-color: #1f7a8c;
+    color: #ffffff;
+    padding: 16px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.pagina-tabela td {
+    padding: 14px;
+    border-bottom: 1px solid #333333;
+}
+
+.pagina-tabela tr:last-child td {
+    border-bottom: none;
+}
+
+.pagina-tabela tr:hover {
+    background-color: #2a2a2a;
+}
+
+.pagina-tabela .col-indicador {
+    width: 45%;
+    font-weight: 500;
+}
+
+.pagina-tabela .positivo {
+    color: #4ade80;
+    font-weight: 600;
+}
+
+.pagina-tabela .neutro {
+    color: #a3a3a3;
+}
+
+.pagina-tabela .navegacao {
+    max-width: 900px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+
+/* ---------- 3. PÁGINA DO RELATÓRIO (relatorio.html) ---------- */
+
+.pagina-relatorio {
+    background-color: #0f0f0f;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.pagina-relatorio .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.pagina-relatorio h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pagina-relatorio h2 {
+    color: #4fc3f7;
+    border-bottom: 2px solid #334455;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+/* Subtítulo logo abaixo do h1 (antes era estilo inline) */
+.pagina-relatorio .subtitulo {
+    text-align: center;
+    color: #4fc3f7;
+    margin-top: 10px;
+}
+
+/* Bloco "Para os Investidores" (antes era estilo inline) */
+.pagina-relatorio .info-investidores {
+    text-align: center;
+}
+
+.pagina-relatorio p {
+    margin-bottom: 16px;
+}
+
+.pagina-relatorio ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.pagina-relatorio table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #222222;
+}
+
+.pagina-relatorio th,
+.pagina-relatorio td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #444444;
+}
+
+.pagina-relatorio th {
+    background-color: #1f7a8c;
+    color: #ffffff;
+}
+
+.pagina-relatorio .highlight {
+    color: #4ade80;
+    font-weight: 600;
+}
+
+.pagina-relatorio .navegacao {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pagina-relatorio .link-botao {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.pagina-relatorio .footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #888888;
+    font-size: 0.95rem;
+}
