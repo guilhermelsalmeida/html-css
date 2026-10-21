@@ -6,6 +6,7 @@ Repositório com minha evolução no estudo de **HTML5 e CSS3**, desde os primei
 
 - [Projeto Android](https://guilhermelsalmeida.github.io/projeto-android): página responsiva que conta a história do mascote do Android. Usa HTML5 semântico, CSS3 com variáveis, fonte externa e fonte local, imagens e vídeo adaptáveis a diferentes telas.
 - [Projeto Cordel](https://guilhermelsalmeida.github.io/html-css/desafios/d012/cordel.html): página com um cordel sobre tecnologia, com layout responsivo, fontes externas e efeito parallax nas imagens. O texto do cordel é de Milton Duarte, com crédito na página.
+- [Projeto Relatório Empresarial](https://guilhermelsalmeida.github.io/html-css/meus-projetos-html/p001/relatorio.html): página responsiva que simula um relatório empresarial.
 - [Página de apresentação](https://guilhermelsalmeida.github.io/html-css/meus-projetos-html/p002/apresentacao.html): página pessoal em que me apresento como estudante de programação.
 
 O Projeto Android e o Projeto Cordel foram feitos como projetos de estudo, em cooperação com o professor Gustavo Guanabara.
